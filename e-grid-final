@@ -1,0 +1,225 @@
+# e-grid-step.py
+import streamlit as st
+import pandas as pd
+import numpy as np
+import random
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+
+from langchain_openai import ChatOpenAI
+import os
+import httpx
+from dotenv import load_dotenv
+import altair as alt
+
+# =============================
+# Setup LLM
+# =============================
+@st.cache_resource
+def setup_llm():
+    load_dotenv()
+    http_client = httpx.Client(verify=False)
+    base_url = os.getenv("api_endpoint")
+    api_key = os.getenv("api_key")
+    model_name = os.getenv("model")
+
+    llm = ChatOpenAI(
+        base_url=base_url,
+        model=model_name,
+        api_key=api_key,
+        http_client=http_client,
+        temperature=0.2
+    )
+    return llm
+
+# =============================
+# Parameters
+# =============================
+np.random.seed(42)
+plants = ['Plant_1', 'Plant_2', 'Plant_3']
+substations = ['Substation_1', 'Substation_2', 'Substation_3']
+features = ['Voltage (kV)', 'Current (A)', 'Temperature (°C)', 'Humidity (%)']
+
+# =============================
+# Fault logic functions
+# =============================
+def determine_fault(row):
+    if row['Temperature (°C)'] > 60:
+        return 'Overheat'
+    elif row['Voltage (kV)'] < 10.5:
+        return 'Undervoltage'
+    elif row['Current (A)'] > 150:
+        return 'Power Surge'
+    elif row['Current (A)'] < 80:
+        return 'Low Power'
+    else:
+        return 'Normal'
+
+def explain_fault(row, fault_label):
+    if fault_label == 'Overheat':
+        return 'Temperature (°C)', row['Temperature (°C)']
+    elif fault_label == 'Undervoltage':
+        return 'Voltage (kV)', row['Voltage (kV)']
+    elif fault_label in ['Power Surge', 'Low Power']:
+        return 'Current (A)', row['Current (A)']
+    else:
+        return 'None', 'N/A'
+
+# =============================
+# Synthetic Data Generation
+# =============================
+def generate_training_data(n=500, agent_type="Plant"):
+    data = []
+    for _ in range(n):
+        if agent_type == "Plant":
+            entity = random.choice(plants)
+            entity_col = "Plant_ID"
+        else:
+            entity = random.choice(substations)
+            entity_col = "Substation_ID"
+
+        voltage = np.random.normal(11.5, 0.5)
+        current = np.random.normal(115, 10)
+        temperature = np.random.normal(40, 12)
+        humidity = np.random.normal(45, 10)
+
+        df_row = pd.DataFrame([[entity, voltage, current, temperature, humidity]],
+                              columns=[entity_col] + features)
+        df_row['Fault Label'] = df_row.apply(determine_fault, axis=1)
+        data.append(df_row)
+    return pd.concat(data, ignore_index=True)
+
+# =============================
+# Model Training
+# =============================
+def train_model(df):
+    le = LabelEncoder()
+    df['Fault_Label_Encoded'] = le.fit_transform(df['Fault Label'])
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(df[features])
+    rf = RandomForestClassifier(n_estimators=100, random_state=42)
+    rf.fit(X_scaled, df['Fault_Label_Encoded'])
+    return {'model': rf, 'scaler': scaler, 'le': le}
+
+def predict_fault(df_row, model_dict):
+    X_scaled = model_dict['scaler'].transform(df_row[features])
+    pred = model_dict['model'].predict(X_scaled)[0]
+    fault_label = model_dict['le'].inverse_transform([pred])[0]
+    reason_feature, reason_value = explain_fault(df_row.iloc[0], fault_label)
+    return fault_label, reason_feature, reason_value
+
+# =============================
+# Two separate models (cached)
+# =============================
+@st.cache_data
+def train_power_plant_model():
+    df_train = generate_training_data(1000, agent_type="Plant")
+    return train_model(df_train)
+
+@st.cache_data
+def train_substation_model():
+    df_train = generate_training_data(1000, agent_type="Substation")
+    return train_model(df_train)
+
+# =============================
+# Streamlit App
+# =============================
+def main():
+    st.set_page_config(page_title="⚡Grid Guardian", page_icon="⚡", layout="wide")
+    st.title("⚡ Grid Guardian")
+    st.markdown("Upload a CSV with **Power Plant** or **Substation** data. The app predicts Fault Labels and explains reasons using AI.")
+
+    # Agent selection
+    agent_type = st.radio("Select Agent:", ["Power Plant", "Distribution Substation"], horizontal=True)
+
+    # Train the right model
+    with st.spinner("Training model..."):
+        if agent_type == "Power Plant":
+            model_dict = train_power_plant_model()
+            entity_col = "Plant_ID"
+            entity_name = "Plant"
+        else:
+            model_dict = train_substation_model()
+            entity_col = "Substation_ID"
+            entity_name = "Substation"
+
+    # Setup LLM
+    try:
+        llm = setup_llm()
+        llm_available = True
+        st.success("LLM connection established")
+    except Exception as e:
+        st.warning(f"LLM not available: {str(e)}")
+        llm_available = False
+
+    # Upload CSV
+    uploaded_file = st.file_uploader(f"Upload CSV with {entity_name} test data", type="csv")
+    if uploaded_file:
+        df_input = pd.read_csv(uploaded_file)
+        st.subheader("📂 Uploaded Data Preview")
+        st.dataframe(df_input.head())
+
+        results = []
+        for idx, row in df_input.iterrows():
+            df_row = pd.DataFrame([row])
+            fault_label, reason_feature, reason_value = predict_fault(df_row, model_dict)
+
+            entity_id = row.get(entity_col, 'N/A')
+
+            # AI reasoning
+            if llm_available:
+                prompt = f"""You are an electrical fault diagnosis expert. 
+                Analyze the following reading and explain the root cause of the fault in simple terms.
+
+                {entity_name}: {entity_id}
+                Fault Detected: {fault_label}
+                Key Parameter: {reason_feature} = {reason_value}
+                """
+                llm_resp = llm.invoke(prompt)
+                ai_explanation = llm_resp.content if hasattr(llm_resp, 'content') else str(llm_resp)
+            else:
+                ai_explanation = "LLM not available"
+
+            results.append({
+                entity_col: entity_id,
+                'Identified Issue': fault_label,
+                'Reason Feature': reason_feature,
+                'Reason Value': reason_value,
+                'Corrective Measure': ai_explanation
+            })
+
+        results_df = pd.DataFrame(results)
+
+        # =============================
+        # Dashboard
+        # =============================
+        st.subheader("📊 Fault Prediction Dashboard")
+        st.dataframe(results_df)
+
+        # Overall fault distribution
+        st.markdown("### 📈 Fault Distribution (Overall)")
+        st.bar_chart(results_df['Identified Issue'].value_counts())
+
+        # Plant/Substation vs Fault Level count
+        st.markdown(f"### 🏭 {entity_name} vs Fault Level Count")
+        count_df = results_df.groupby([entity_col, 'Identified Issue']).size().reset_index(name='Count')
+
+        chart = (
+            alt.Chart(count_df)
+            .mark_bar()
+            .encode(
+                x=alt.X(f"{entity_col}:N", title=entity_name),
+                y=alt.Y("Count:Q"),
+                color="Identified Issue:N",
+                tooltip=[entity_col, "Identified Issue", "Count"]
+            )
+            .properties(width=600, height=400)
+        )
+        st.altair_chart(chart, use_container_width=True)
+
+        # Download option
+        csv = results_df.to_csv(index=False)
+        st.download_button("⬇️ Download Predictions CSV", csv, "predictions.csv", "text/csv")
+
+if __name__ == "__main__":
+    main()
