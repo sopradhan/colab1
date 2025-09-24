@@ -1,0 +1,491 @@
+Grid Guardian – AI-Powered Fault Diagnosis & Carbon-Aware Monitoring
+
+
+
+Slide 1: Title Slide
+
+Title: ⚡ Grid Guardian – Agentic, AI-Based Grid Fault Monitoring
+
+Team: Epoch Explorer – Sourav Kumar Pradhan, Souvik Roy, Rupankar Chakraborty, Prasun Koyal, Samyadeep Kuila
+
+Mentor: Saurav Chatterjee
+
+Acknowledgment: Kolkata AI Program Team, Abhinandan Banerjee, Bratati Roy
+
+
+
+Slide 2: Problem Statement
+
+Core Problem:
+
+Grid operators require rapid fault diagnosis to reduce downtime & service disruption.
+
+Challenges:
+
+Legacy SCADA, rules-based alarms
+
+Risk of cascading failures
+
+Lack of explainable corrective measures
+
+Limited integration of carbon footprint & sustainability insights
+
+Goal:
+
+Predict faults in real-time, identify root cause, and provide actionable corrective measures
+
+Integrate carbon-aware operations
+
+Expected Output:
+
+Fault type (Overheat, Undervoltage, Power Surge, Low Power)
+
+Key parameter causing fault
+
+Stepwise CoT-based corrective action
+
+
+
+Slide 3: Migration from Legacy Systems
+
+Approach:
+
+Deploy Agentic AI + RAG-enabled LLM alongside legacy SCADA
+
+Gradual shift from advisory → semi-automated → automated alerts
+
+Challenges & Solutions:
+
+ChallengeSolutionHallucinations from LLMStructured CoT + RAG retrieval from SOP/manualsDiverse sensor formatsStandardization & preprocessingRegulatory complianceHuman-in-loop, logging, audit trail
+
+Outcome:
+
+Safe & explainable corrective actions
+
+Non-disruptive integration into existing SCADA
+
+
+
+Slide 4: What We Did – Detailed Technical Summary
+
+1️⃣ Synthetic SCADA Data Generation
+
+Objective: Generate realistic training datasets without live SCADA access.
+
+Agents: Power Plant & Distribution Substation.
+
+Simulated Parameters: Voltage (kV), Current (A), Temperature (°C), Humidity (%).
+
+Fault Labeling (SCADA-inspired logic):
+
+Overheat: Temperature > 60°C
+
+Undervoltage: Voltage < 10.5 kV
+
+Power Surge: Current > 150 A
+
+Low Power: Current < 80 A
+
+Implementation: Each row evaluated to assign fault label, mimicking SCADA alarms for supervised ML training.
+
+Takeaway: Enables safe, realistic, and labeled datasets for training and testing ML models in power systems.
+
+2️⃣ Random Forest Classification
+
+Purpose: Classify faults using SCADA-like sensor readings.
+
+Why Random Forest fits our scenario:
+
+Handles mixed numerical features robustly
+
+Resistant to noise and outliers, common in SCADA data
+
+Provides feature importance, identifying the sensor driving the fault
+
+Scalable to synthetic and real-time streaming datasets
+
+High-Level Architecture:
+
+Bootstrap Sampling: Multiple random subsets of training data
+
+Decision Tree Training: Each tree splits data on features (Voltage, Current, Temp, Humidity) to classify fault
+
+Ensemble Voting: Majority vote across all trees → final fault label
+
+Feature Importance: Identifies which sensor parameter contributes most to fault
+
+Output: Fault label + key sensor driving fault → input for LLM reasoning
+
+3️⃣ LLM Chain-of-Thought (CoT) Reasoning
+
+Purpose: Convert ML predictions into stepwise, actionable guidance for operators.
+
+Dynamic Prompt Template (Hive Context):
+
+You are an electrical fault diagnosis expert. Entity: {entity_id} Fault Detected: {fault_label} Key Parameter: {reason_feature} = {reason_value} Provide step-by-step corrective actions for safe resolution. (Optional) Include carbon-aware guidance if available.
+
+Placeholders populated dynamically from Random Forest output.
+
+LLM Output Example:
+
+FaultKey SensorValueCoT Corrective StepsOverheatTemperature67°C1️⃣ Reduce load gradually 2️⃣ Activate backup cooling 3️⃣ Redistribute load 4️⃣ Log intervention
+
+Benefits:
+
+Multi-step reasoning ensures operator clarity
+
+Grounded in sensor data → avoids hallucination
+
+Optionally incorporates carbon intensity awareness
+
+4️⃣ Streamlit Dashboard
+
+Raw Sensor Table: Voltage, Current, Temperature, Humidity
+
+Predicted Fault Table: Fault type, key sensor, value, CoT corrective steps
+
+Trend Charts: Voltage, Current, Temperature over time
+
+Real-Time Simulation: Adjustable iterations & interval for live operational demonstration
+
+Workflow Visual:
+
+SCADA-like Sensor Data → Random Forest → Key Sensor/Value → LLM Prompt → CoT Corrective Steps → Dashboard
+
+5️⃣ Key Outcomes
+
+Rapid fault detection aligned with SCADA logic
+
+Stepwise, explainable corrective guidance for operators
+
+Dashboard visualization allows monitoring and decision-making in real-time
+
+Fully grounded in industrial SCADA rules, enabling scalable adoption
+
+Future Enhancement:
+
+Dashboard will include:
+
+Operational KPIs: uptime, load factor, transformer utilization, MTTR
+
+Carbon footprint in kg CO₂ per plant/substation
+
+LLM suggestions will factor in carbon intensity to recommend low-emission corrective actions
+
+
+
+Slide 5: Why Random Forest & Alternatives
+
+Random Forest High-Level Flow:
+
+Build multiple trees on random subsets of data/features
+
+Each tree predicts fault label
+
+Aggregate votes → final prediction
+
+Feature importance identifies key sensor causing fault
+
+CoT Prompt Example:
+
+Fault: Overheat, Temperature = 67°C Reason: High Temp triggers turbine stress LLM Action: 1️⃣ Reduce load gradually 2️⃣ Check cooling fans 3️⃣ Redistribute load 4️⃣ Monitor CO₂ impact 5️⃣ Log for compliance
+
+Why Random Forest:
+
+Handles mixed numerical features (Voltage, Current, Temp, Humidity)
+
+Noise-tolerant and interpretable
+
+Provides feature importance → feeds LLM for reasoning
+
+Alternatives:
+
+XGBoost / LightGBM / CatBoost → higher accuracy, similar interpretability
+
+LSTM / Temporal models → capture temporal dependencies for predictive maintenance
+
+AutoML pipelines → continuous retraining on SCADA streams
+
+
+
+Slide 6: Dynamic Agentic Workflow
+
+Agents: Power Plant Agent & Distribution Substation Agent
+
+Auto-detection: Dynamically classify entity based on voltage/current patterns
+
+Optimized with GNN:
+
+Nodes = plants/substations, edges = transmission lines
+
+Predict cascading faults & prioritize high-impact corrective actions
+
+Edge Deployment:
+
+Lightweight agents at substations for low-latency alerts
+
+Cloud aggregation for dashboard & analytics
+
+Value for Manufacturers & Stakeholders:
+
+Faster fault resolution → reduced downtime → operational savings
+
+Predictive maintenance → lower carbon footprint
+
+ESG reporting & compliance → investor confidence
+
+Adoption examples: predictive maintenance in India shows 20–30% downtime reduction
+
+
+
+Slide 7: Real-Time AI Corrective Alert Flow
+
+SCADA Data → Random Forest → Fault Label → Key Parameter → LLM CoT + RAG → Corrective Action → Dashboard / Edge Alerts
+
+CoT Corrective Action Example:
+
+FaultKey ParameterLLM CoT ActionOverheatTemp = 67°C1️⃣ Reduce turbine load gradually 2️⃣ Increase coolant flow 3️⃣ Check fan & pump 4️⃣ Redistribute load to balance thermal stress 5️⃣ Monitor CO₂ intensity & efficiency 6️⃣ Log action for complianceUndervoltageVoltage = 10.2 kV1️⃣ Check transformer taps 2️⃣ Rebalance feeder load 3️⃣ Verify grid supply from upstream 4️⃣ Adjust capacitor banks 5️⃣ Log & monitor
+
+Alert Mechanism:
+
+Severity-based: advisory vs critical
+
+Channels: Dashboard, SMS, SCADA triggers
+
+RAG ensures SOP-compliant & safe execution
+
+
+
+Slide 8: Dashboard Snapshot – CoT & Carbon Integration (Elaborated)
+
+1️⃣ Layout Overview
+
++--------------------------------------------------------------------------------------+ | Raw Sensor Data | Predicted Faults | Trend & Carbon Chart | |--------------------------------------------------------------------------------------| | Sensor table | Fault table with step-by-step corrective | Altair / Interactive chart | | (Voltage, Temp, | actions & carbon impact | showing trends over time | | Current, Humidity) | | for Voltage, Current, | | | | Temperature, Carbon | +--------------------------------------------------------------------------------------+
+
+2️⃣ Components & Details
+
+A. Raw Sensor Data Table
+
+Columns:
+
+Timestamp
+
+Entity (Plant / Substation)
+
+Voltage (kV)
+
+Current (A)
+
+Temperature (°C)
+
+Humidity (%)
+
+Function:
+
+Shows real-time sensor feed
+
+Can highlight anomalies (color-coded thresholds)
+
+Allows export / download for further analysis
+
+B. Predicted Faults Table
+
+Columns:
+
+Timestamp
+
+Entity
+
+Fault Type (Overheat, Undervoltage, Power Surge, Low Power)
+
+Key Parameter (Reason Feature)
+
+Parameter Value (Reason Value)
+
+CoT Corrective Actions (LLM-generated)
+
+Carbon Impact Estimate (kg CO₂)
+
+Features:
+
+Each corrective action is stepwise, explainable, and carbon-aware
+
+Can simulate operator intervention (accept/reject step)
+
+Carbon impact provides real-time sustainability insight
+
+Example Row:
+
+TimeEntityFaultKey ParamValueCoT Corrective ActionsCarbon Impact (kg CO₂)14:23:10Plant_2OverheatTemp67°C1️⃣ Reduce load 2️⃣ Increase cooling 3️⃣ Redistribute load 4️⃣ Log45
+
+C. Trend & Carbon Chart
+
+Visuals:
+
+Multi-line chart (Altair or Plotly)
+
+Parameters: Voltage, Current, Temperature, Fault Count, Carbon Intensity
+
+Functionality:
+
+Shows temporal trends for each parameter
+
+Overlay carbon footprint to visualize environmental impact
+
+Supports hover tooltips for exact values
+
+Can highlight high-risk periods for predictive maintenance
+
+3️⃣ Interactive Features
+
+Filter by Entity: Plant / Substation selection
+
+Simulate Intervention: Accept/override LLM suggestions
+
+Export Reports: CSV/PDF for audit & regulatory compliance
+
+Alert Notifications: Color-coded severity → Advisory / Critical
+
+Historical Playback: Replay past sensor readings & faults
+
+4️⃣ Backend Integration Notes for Gamma
+
+Data Sources:
+
+Real-time SCADA feed or CSV upload
+
+Synthetic data generator for demo/testing
+
+ML Model: Random Forest predictions → reason feature → CoT LLM reasoning
+
+LLM Prompts: Include fault type, key sensor feature, value, optional carbon metric
+
+Carbon Integration:
+
+Use CEA grid emission factors or plant-specific emissions
+
+Compute kg CO₂ = Energy Impact × Emission Factor
+
+5️⃣ Key Benefits of this Dashboard
+
+Provides operational visibility + carbon-awareness
+
+Stepwise CoT corrective actions reduce operator uncertainty
+
+Multi-agent insights (Plant & Substation) for faster response
+
+Scalable & industrial-grade: supports edge + cloud deployment
+
+
+
+Slide 9: Future Enhancements – Elaborated
+
+1️⃣ Carbon-Aware Corrective Measures
+
+Integrate real-time carbon intensity per kWh from CEA & plant-specific emission data.
+
+LLM uses this info in CoT reasoning to suggest actions that reduce CO₂ footprint, e.g.:
+
+Redistribute load to less carbon-intensive units
+
+Optimize auxiliary system usage
+
+Sequence equipment startup/shutdown for minimal carbon impact
+
+Outcome: Operational efficiency + ESG-compliant decision-making
+
+2️⃣ Topology-Aware Fault Prediction with GNN
+
+Represent the grid as a graph: nodes = plants/substations, edges = transmission lines
+
+GNN predicts cascading fault propagation across the network
+
+Enables agents to prioritize interventions where the impact is highest
+
+Supports multi-agent collaboration, improving grid resilience
+
+3️⃣ RAG + SLM Fine-Tuning
+
+Retrieval-Augmented Generation (RAG): Injects knowledge from SOP manuals, maintenance logs, and regulatory guidance
+
+Structured LLM fine-tuning (SLM): Ensures domain-specific, safe, and actionable recommendations
+
+Reduces hallucinations, maintains compliance, and provides stepwise operator guidance
+
+4️⃣ Dashboard Visualization
+
+Combine operational KPIs (uptime, load factor, MTTR, efficiency) with carbon footprint trends
+
+Real-time charts, tables, and predictive metrics
+
+Enables stakeholders to monitor performance and sustainability simultaneously
+
+5️⃣ Edge + Cloud Integration
+
+Edge deployment: Real-time processing at substations for low-latency alerts
+
+Cloud orchestration: Centralized monitoring, dashboard updates, multi-agent coordination
+
+Scalable to industrial-level deployments across multiple plants and substations
+
+Outcome: A fully agentic, carbon-aware, topology-sensitive, and scalable AI system for modern grid operations
+
+
+
+Slide 10: References – Elaborated
+
+1️⃣ Central Electricity Authority (CEA)
+
+Provides plant-wise and grid-level emission factors
+
+Basis for calculating CO₂ intensity per MWh
+
+Source: https://cea.nic.in
+
+2️⃣ POSOCO / GRID-India
+
+Real-time load dispatch and SCADA logs
+
+Regional & national grid operation metrics
+
+Source: https://posoco.in
+
+3️⃣ Open Government Data (OGD) India
+
+Publicly available power generation & renewable energy mix
+
+Formats: CSV, JSON, for ingestion into dashboards
+
+Source: https://data.gov.in
+
+4️⃣ CESC Sustainability Reports
+
+Plant-level carbon emissions, efficiency, and sustainability metrics
+
+Can be used for LLM training and carbon analytics
+
+Source: https://www.cesc.co.in
+
+5️⃣ Energy Efficiency Services Ltd (EESL)
+
+Energy efficiency benchmarks for load reduction, system optimization
+
+Helps in defining corrective action targets
+
+Source: https://www.eeslindia.org
+
+
+
+Slide 11: Team & Acknowledgments
+
+Team Epoch Explorer: Sourav Kumar Pradhan, Souvik Roy, Rupankar Chakraborty, Prasun Koyal, Samyadeep Kuila
+
+Mentor: Saurav Chatterjee
+
+Thanks: Kolkata AI Program Team, Abhinandan Banerjee, Bratati Roy
+
+
+
+Slide 12: Q&A / Thank You
+
+Closing remark: “AI-powered, agentic, carbon-aware fault monitoring for modern energy grids – scalable, explainable, actionable, and industry-ready.”
