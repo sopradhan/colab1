@@ -1,0 +1,1046 @@
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+SmartDairy: AI-Driven Dairy Growth Engine
+The dairy industry feeds billions, but faces major scaling barriers: unpredictable milk yields, supply chain inefficiencies, poor demand forecasting, animal health issues, food safety, and low-margin product diversification. Small and mid-scale producers struggle to optimize operations and compete, leaving stakeholders (farmers, processors, distributors, retailers) exposed to inefficiency and waste. Modernizing with AI is crucial for sustainable, scalable dairy business growth.
+
+Input Data
+Farm Sensors: IoT data on animal health, milk yield, feed usage, ambient environment.
+
+Production Data: Batch yields, process logs, lab results (quality, safety), loss rates.
+
+Supply Chain: Fleet GPS, temperature tracking, inventory logs, sales data.
+
+Market Signals: Point-of-sale (POS), CRM, competitor prices, weather.
+
+Assumption: Dairy cooperatives, farms, and processors provide baseline historical datasets for model pre-training.
+
+Synthetic Data: Simulated demand shocks, machine breakdowns for stress testing predictive models.
+
+Current Challenges
+Yield Unpredictability: Variation in milk production affects planning.
+
+Supply-Demand Gaps: Overstock leads to spoilage, shortages hurt revenues.
+
+Quality/Safety Risks: Manual QA can be slow, error-prone.
+
+Fragmented Data: Siloed farm/plant/sales systems inhibit scaling.
+
+Low-margin Processing: Little insight into profitable diversification (e.g., cheese, yogurt, ghee).
+
+Proposed AI Solution (Fusion Stack)
+Justification & Layers
+Edge AI: On-farm sensor-based monitoring for immediate anomaly alerts (animal health, temperature, process hygiene).
+
+Predictive AI: LSTM/Transformer models forecast yield (daily/seasonal), demand trends, supply chain risk, margin potential by product.
+
+Agent AI: Automates inventory reorder, fleet reroutes, batch process optimization (minimizing wastage, maximizing batch yields).
+
+Bot AI Interface: Natural-language interface for staff to ask “What’s peak milk yield this week?” or “Suggest new product trial batch for September.”
+
+Fusion AI: Edge ensures safety/responsiveness, Predictive optimizes scaling, Agent automates actions, Bot powers frictionless staff interaction.
+
+Workflow
+[Farms] -> [Edge AI (animal/process)] -> [Cloud API] | | | (alerts/yields) [Predictive/Agent AI] | [Automated actions/suggestions] | [Bot Interface/Dashboard]
+Technical Description
+Data Pipeline: Real-time sensor and manual input feeds; streaming to edge preprocessors (Raspberry Pi/Jetson) for local safeguarding and event flagging; bulk upload to cloud store (AWS/Azure) via API gateway.
+
+AI Models: Edge-based anomaly detection (Random Forest/CNN); cloud-based LSTM/Transformer for time series forecasting (yield, demand, risk); RL/Agent models for process/supply optimization.
+
+Integration Points: RESTful APIs to ERP, legacy databases, supply chain platforms, and dashboard/UI (React + D3).
+
+Bot Interface: NLP-powered Q&A; results piped to central dashboard, SMS, or WhatsApp notifications.
+
+Impact
+Smarter scaling—milk yields predicted accurately, inventory/supply tuned, product mix optimized.
+
+Waste reduced: Just-in-time production lowers spoilage, improves margins.
+
+Faster decisions: Staff respond proactively to health, safety, logistics alerts.
+
+Stakeholder empowerment: Producers, processors, and retailers access actionable insights for business growth.
+
+Use Case Story
+A cooperative runs SmartDairy: Edge AI on cow sensors flags early mastitis, predictive AI suggests an optimal mix of cheese/yogurt for next week based on market signals and past sales, Agent AI reroutes delivery trucks in a heatwave, and Bot AI lets staff query “best diversification path for this month’s surplus.” Supply chain and sales grow 20% while spoilage drops by half.
+
+Limitations
+Data gaps: Farms without sensors, or missing baseline data.
+
+Compute/bandwidth: Rural areas may lack reliable internet for cloud sync.
+
+Adoption: Staff training and change management needed.
+
+Deployment/Scaling Challenges
+Hardware costs: Edge devices/sensors, especially for small producers.
+
+Interoperability: Integrating legacy software and ensuring API compatibility.
+
+Governance: Data sharing for multi-stakeholder optimization.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+The dairy sector is worth billions but hampered by inefficiency and low margins. SmartDairy offers measurable gains—yield accuracy, reduced spoilage, optimized product mix. The solution can scale through modular sensor+edge kits, centralized APIs, and partner dashboards. Producers join as nodes, integrating with cloud backend and mobile interfaces for rapid expansion. API connectors support co-ops, major brands, and SME processors.
+Novelty of the idea, benefits and risks.
+Novelty: Unlike manual tracking and basic ERP methods, SmartDairy fuses multi-layer AI—real-time edge safety, predictive business growth, agent automation, natural-language UI. Benefits: Less waste, improved profits, healthier herds, better decisions. Risks: Data privacy, overreliance on automated suggestions, sensor failures, potential integration roadblocks. Mitigations: GDPR-compliant storage, robust edge fail-safes, regular human review loop, modular API layers for gradual integration.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Security: Device authentication, encrypted data transmission, RBAC on cloud dashboard. Fairness: Models regularly audited for bias—herd size, region, seasonality. Privacy: Producer data anonymized; only aggregated trends used for public insights. Legal: GDPR-compliant where relevant; open API docs, licensing for fair use. Transparency: Full audit trail for automated actions, explainable results in dashboard.
+Co-owners
+Prasun Koyal
+Developer
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+LokSwasthya AI - Agentic Platform for Livestock, Food Safety, and Human Health in India
+In India, the safety and nutritional quality of food—across livestock, dairy, grains, staples, vegetables, and fruits—directly influence public health and economic stability. Yet, current monitoring and risk management are fragmented. Government agencies like ICAR and FSSAI maintain excellent reference databases and periodically release advisories and recalls. However, these systems often lack seamless integration with market-level data, batch sales records, field sensor and lab readings, real-time consumer complaints, and fast, actionable links to state health authorities. LokSwasthya AI addresses these gaps with agentic intelligence—a network of cloud-hosted autonomous microservices (“agents”) that actively ingest, harmonize, and analyze real-time data from all major food safety stakeholders:
+Government Databases: Instant ingest from ICAR, FSSAI, and state portals, including standards, thresholds, recall lists, banned substances, outbreak reports, and region-wise nutrition recommendations.
+
+Market & Vendor Records: Ongoing batch uploads, API connectivity, and event-driven data capture from market sales, vendor inventories, product codes, and cooperative platforms.
+
+Lab & Sensor Streams: Direct integration with portable labs and IoT sensors generates readings for critical minerals (Ca, Fe, Mg, Zn, K, Na, Cu, Se, P, I, Mn), toxins (aflatoxins, pesticides, heavy metals), pathogens (Brucella, FMDV, BlueTongue, Avian Influenza), freshness, and spoilage markers.
+
+Survey & App-based Feedback: Automated collection and linkage of consumer/vendor health complaints and symptoms via mobile forms, voice logs, and rapid survey modules.
+
+Environmental Feeds: Continuous monitoring of weather, flood, pollution, and environmental risk, tied to region and season.
+
+Image Data: Mobile photo uploads from vendors, farmers, labs, and field staff capture batch images, labeling, packaging, and visible signals of contamination, pest, spoilage, and animal disease.
+
+Multimodal AI & Model Suite
+The Multimodal ML Hub is a major technical innovation in LokSwasthya AI, where agents orchestrate specialized models for each prediction type:
+
+Tabular Models: XGBoost, LightGBM, and custom regression/classifiers for structured batch and lab data—detecting mineral deficiencies, toxins, adulteration, and disease probabilities.
+
+Sensor Models: LSTM, GRU, regression and time-series architectures interpret IoT sensor/freshness/spoilage data, environmental factors, and dynamic risk signals.
+
+NLP/Text Models: Lightweight Transformers (DistilBERT, MobileBERT) interpret surveys, complaints, health advisories, vendor feedback, and regulatory updates—enabling sentiment analysis, early event detection, and symptom linking.
+
+Image Models (Detectron2): Using Meta AI’s Detectron2, agents perform advanced image detection, segmentation, and labeling. Detectron2 identifies contamination, spoilage, pest/rodent activity, visible disease, and packaging errors from batch photo submissions. Image outputs are fused with tabular and sensor analysis for holistic prediction. Models run on cloud GPU, and ONNX/TensorRT exports support edge inference for mobile deployments where feasible.
+
+Fusion Models: Agent-fused networks combine tabular, sensor, image, and text features for batch-level and consumer-level risk prediction—ensuring maximum context and accuracy. RAG (retrieval-augmented generation) modules fetch continuous government advisories, recalls, and outbreak news, automating contextual updates.
+
+Agent Orchestration & Technical Pipeline
+At its core, LokSwasthya AI leverages the Agent Orchestrator—a component that listens and responds intelligently to new market batches, lab findings, government alerts, or citizen feedback:
+
+Workflow Management: Agents are assigned to food groups (e.g., livestock, dairy, grains), regions, vendor groups, or outbreak risks. Upon receiving new data or triggers, agents plan appropriate analytics, select predictive models, fetch relevant government recalls, and notify stakeholders.
+
+Data Harmonization & Policy Integration: Diverse data types are automatically normalized and mapped against current thresholds, recall lists, and outbreak advisories.
+
+Scheduling & Monitoring: Agents schedule health checks, batch analyses, region-wide rapid responses, and ongoing market surveillance based on state health department triggers, recall notices, or vendor request cycles.
+
+Prediction, Alerts & Stakeholder Engagement
+LokSwasthya AI goes beyond dashboards, driving real-world alerts and interventions:
+
+Vendors and Farmers: Mobile app notifications and dashboards deliver rapid advisories (“Milk batch flagged for Brucella, recall required”; “Wheat sample exceeds aflatoxin threshold—remove from market”.State/Regional Health Departments: Direct notification pipeline ensures real-time batch/event alerts, outbreak detection, and containment actions—transforming public health response from reactive to proactive.Consumers: Risk ratings and health feedback close the loop between consumption, quality, and health outcomes. Automated advisories empower citizens with safe purchasing decisions .Regulatory Authorities: Automated audit logs and compliance reports document recalls, withdrawals, advisories, and citizen-facing actions—ensuring policy-driven, explainable interventions.
+
+Expected Outcomes & Societal Impact
+LokSwasthya AI delivers measurable, transformative benefits:
+
+Rapid Notification: Reduces time from contamination detection to advisories for vendors, regulators, and citizens.
+
+Outbreak Detection & Containment: Automates evidence flows to state health departments, enabling swift response and minimized spread.
+
+Lower Foodborne Illness & Malnutrition: Continuous monitoring and analytic intervention decrease incidence rates and support population health.
+
+Trustworthy Food Ecosystem: Transparent, data-driven advisories rebuild stakeholder trust and support economic resilience for farmers, vendors, and markets.
+
+Scalable AI Infrastructure: Enables TCS and customers to deploy robust, high-impact health analytics locally, regionally, or nationwide.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+India’s food supply chain faces persistent challenges: fragmented monitoring across markets and geographies, slow and reactive detection of contamination/adulteration, delayed outbreak and recall responses, and minimal linkage between consumer health feedback, vendor actions, and government interventions. These bottlenecks result in preventable public health risks, economic loss for producers and markets, and eroded trust in food safety. LokSwasthya AI addresses these gaps by automating the ingestion, integration, and analysis of diverse data sources—including government databases (ICAR, FSSAI, state or national health alerts), lab and sensor findings, vendor/market records, and real-time citizen feedback. Through agentic AI and multimodal analytics (tabular, image/Detectron2, sensor, NLP), the platform generates actionable health risk scores, batch-level contamination predictions, and rapid advisories for intervention—enabling swift responses to emerging threats. Scalability Across TCS and Customers: LokSwasthya AI’s modular, microservice architecture means rapid deployment in local co-operatives, markets, agribusiness sites, or state agencies. APIs and connectors support integration with TCS verticals (AgriTech, Healthcare, Retail, Analytics) and can extend to large enterprise clients, regulatory bodies, and rural digitization initiatives. The system grows by adding agents for new regions, food categories, and analytics, with ability to tailor dashboards, notification systems, and compliance reporting to any client ecosystem. Supports on-prem, cloud, or hybrid deployments; scalable from pilot projects to pan-India public health infrastructure, maximizing impact for TCS and diverse customer needs.
+Novelty of the idea, benefits and risks.
+LokSwasthya AI is among the first platforms in India to combine agentic AI automation with multimodal analytics—including tabular, sensor, NLP, and advanced image-based detection using Meta’s Detectron2—for real-time food safety and public health risk prediction. Autonomous agents orchestrate synchronous ingestion and harmonization of data from government databases, market and lab records, citizen feedback, and environmental APIs. The platform dynamically incorporates latest state advisories and recall events, triggering rapid, evidence-based alerts and interventions. Seamless integration with state health departments allows for closed-loop outbreak prevention, recall management, and citizen protection from the batch to the population level. Benefits: Enables early, automated detection and response to food contamination, disease, and nutrition risks. Empowers farmers, vendors, and consumers with clear, actionable advisories for quick intervention. Improves transparency and trust across food supply chains and markets. Reduces manual effort, improves coverage in rural and urban settings, and helps government respond rapidly to emerging public health threats. Continually learns and adapts to new challenges or foods, future-proofing safety and compliance. Risks: Incomplete, delayed, or inaccurate data ingestion may temporarily reduce prediction accuracy; mitigated by robust validating, fallback logic, and human-in-the-loop review. Potential bias in models or data representation handled by regular fairness audits and community-driven data expansion. Privacy and security challenges are managed by strict encryption, anonymization, and compliance with Indian data privacy laws. Integration failures with external APIs or government infrastructure are addressed by backup sync processes and modular design.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+LokSwasthya AI has been architected with Responsible AI at its core to ensure trust, safety, and accountability across all platform operations: Security: All data flows—government, market, lab, sensor, and user feedback—are encrypted at rest and in transit. Role-based access controls prevent unauthorized data retrieval and agent actions. Automated audit logs track every prediction, alert, and intervention, supporting end-to-end traceability and incident investigation. Fairness: Routine fairness and bias audits are performed on all deployed models to ensure predictions and advisories serve all regions, food groups, and communities equitably. Data collection strategies actively include underrepresented areas and groups; community feedback is incorporated to reduce systemic bias. Privacy: No personal identification data is stored or exposed; consumer and vendor feedback is anonymized before analytics. Full opt-in consent is required for all data sources, including citizen reporting and mobile app usage. Privacy controls and data minimization are implemented per Indian digital health laws and upcoming global standards. Legal Compliance: Platform enforces compliance with FSSAI, ICAR, and state food/health regulations for every recall, advisory, and report. Automated policy checks are performed for every batch or product analyzed. All notifications and interventions are logged for regulatory review; platform remains adaptable to future changes in national compliance laws and standards.
+Co-owners
+Alekhya Das
+Functional Analyst
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+AI Data Agent for Automated Analytics and Solution Generation
+The AI Data Agent is a platform-agnostic, enterprise-ready solution designed to automate the process of turning business questions into actionable analytics, code, and visualizations by leveraging metadata intelligence, agentic AI, and automated code/UI generation. This agent acts as a virtual analytics copilot, significantly reducing manual effort, technical barriers, and operational costs typically involved in data-driven solution development.
+
+Technical Approach
+Metadata-Driven Architecture:
+The agent continuously scans, maps, and updates metadata from core databases, data warehouses, and data lakes. It captures schema details, table relationships, access lineage, and historical query patterns to maintain a living catalog of all enterprise data assets.
+
+AI-Powered Request Parsing:
+Users submit requests in natural language. Advanced NLP interprets the intent, references the metadata catalog, and formulates the end-to-end analytical logic, including identifying relevant tables, required joins, data quality issues, and proper aggregations.
+
+Automated Code Generation:
+The system generates production-grade code (SQL, Python for ETL/modeling, or even dashboard components) tailored to enterprise standards and leveraging open-source or proprietary libraries as needed. By automating best-practice boilerplate, the agent minimizes error-prone manual coding.
+
+Insight & Solution Synthesis:
+Beyond raw data retrieval, the agent summarizes results, identifies relevant insights (trends, outliers, recommendations), and produces ready-to-use narrative and visuals for reports and presentations.
+
+Security & Compliance:
+Every data access, code action, and generated asset is logged for audit. Permissioning is enforced using existing IAM/role definitions, ensuring data privacy and compliance with regulations like GDPR.
+
+Technical Benefits
+Drastic Time Reduction:
+Reduces the turnaround time from business question to solution—from days or weeks to minutes—by automating the translation of requirements into code and insights.
+
+Standardization & Quality:
+Every query, transformation, and model aligns with enterprise data standards and best practices, reducing technical debt and patchwork analytics.
+
+Adaptability:
+The agent’s architecture supports any data backend (SQL, NoSQL, cloud lakehouse, on-prem systems) and can ingest new metadata types as enterprise data evolves.
+
+Scalable Efficiency:
+Supports an unlimited number of business users simultaneously, automatically caching and reusing solutions for common requests.
+
+Cost-Saving Impacts
+Reduced Demand for Manual Analytics:
+Non-technical staff can self-serve, freeing up data engineering and BI teams for more strategic tasks and less ‘ad hoc’ request servicing.
+
+Lower Development and Maintenance Costs:
+Automated code and solution generation cuts down on costly custom development and reduces the risk of errors that can lead to rework or compliance exposure.
+
+Fewer Licensing and Consulting Requirements:
+Lean on open-source LLMs and analytics frameworks or centralized internal libraries instead of recurring fees for proprietary point solutions or third-party consultants.
+
+Optimized Infrastructure Usage:
+By generating efficient queries and reusing computation, the agent reduces unnecessary data pipeline runtime and cloud compute costs.
+
+Minimized Training and Change Management:
+With conversational interfaces and contextual help embedded, onboarding new users is faster and training budgets are minimized.
+
+Sustainable Long-Term Value
+Continuous Learning:
+The agent refines its models and recommendations by learning from user feedback, completed tasks, and emerging business data patterns—driving ongoing optimization.
+
+Agile Business Capability:
+Enables enterprises to rapidly adapt analytics and reporting to new business challenges, regulatory requirements, or competitive demands without waiting for IT retooling.
+
+Governed, Reusable Analytics Assets:
+All generated queries, pipelines, and models are cataloged and versioned, supporting collaboration and reapplication across business lines or geographies.
+
+Risk Reduction:
+Audit trails, policy-based data access, and explainability features ensure compliance and reduce risk of data leaks or flawed analytics.
+
+Example Use Cases
+Sales teams request on-demand dashboards for market trends with no SQL or BI expertise.
+
+Finance receives instant code for churn analysis or regulatory reports.
+
+Product managers get automated data-quality monitoring and outlier detection integrated into their reporting UI.
+
+In summary: The AI Data Agent transforms fragmented, manual analytics workflows into an automated, AI-powered process—driving technical excellence, dramatically reducing cost, and giving business teams a scalable edge in both speed and quality of insight. By consolidating enterprise metadata, automating solution creation, and enforcing governance, it is a foundational tool for next-generation, data-driven organization
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+New Opportunity: Deploy an AI Data Agent that leverages metadata intelligence and automated code generation to transform user requirements, expressed in natural language, into ready-to-use queries, dashboards, or modeling pipelines. This agent maintains a live understanding of all enterprise datasets, their relationships, and historical usage, instantly mapping business requests to the correct data assets and generating not only analytics but also narrative insights and code. Proposed Solution: The AI Data Agent continuously scans and updates metadata across databases and warehouses. When users request an analysis or solution, it parses their intent with NLP, determines the right data sources, and automatically generates the required SQL, Python, or dashboard components according to enterprise best practices. It outputs actionable insights—charts, summaries, and code—while logging every action for audit and compliance. Implementation Plan: Integrate data source connectors to extract metadata and maintain lineage. Build and train NLP and code-generation models tailored to enterprise schemas and usage history. Develop a secure, conversational UI for request intake, integrated with role-based access. Launch a feedback loop to improve solution relevance and code quality over time. Roll out in phases: start with reporting use cases, then expand to modeling and automated monitoring, ensuring regular reviews for bias, privacy, and compliance alignment. This AI Data Agent streamlines analytics, reduces manual effort, slashes costs, and democratizes data-driven innovation across the organization.
+Novelty of the idea, benefits and risks.
+The AI Data Agent is innovative in that it serves as an intelligent bridge between business users and complex enterprise data landscapes, using advanced metadata management and natural language processing to instantly translate user requests into analytics, code, or dashboards—without requiring technical expertise or manual data engineering. Unlike conventional BI tools or workflow automation, the Agent maintains a live, enterprise-wide understanding of all data assets, their relationships, and usage, enabling fully automated end-to-end solution generation, insight delivery, and self-service analytics. This breaks the cycle of slow, costly reliance on IT or specialized analysts for every new business task. Implementing this solution dramatically reduces turnaround time and operational costs by empowering any user to obtain custom analytics and data models on demand. It streamlines workflows, increases data asset utilization, and ensures analytic consistency by standardizing how queries and models are generated and deployed. The AI Agent’s modular, metadata-driven architecture allows it to scale efficiently across business domains, geographies, and evolving tech stacks—accommodating new data sources and use cases with minimal effort. Continuous learning and logging drive ongoing improvement and compliance, while democratizing access accelerates innovation. Over time, the organization gains an adaptive, governed analytics foundation that improves productivity, lowers risk, optimizes resources, and sustains value as business needs and data grow.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+The AI Data Agent ensures secure and responsible use of AI by embedding robust technical, governance, and compliance safeguards into every layer of its architecture. All data access and transformations are governed by enterprise identity and access management, with role-based permissions and detailed audit logs for every query, generated code, and solution delivered. Sensitive data is encrypted both in transit and at rest. The agent only accesses and exposes data according to user permissions, enforcing privacy and compliance (like GDPR) automatically. AI and code-generation models are continuously monitored for bias, fairness, and unintentional exposure of sensitive data or logic; model decisions and code recommendations are designed to be explainable, supporting audit, troubleshooting, and regulatory review. Every user interaction, solution generated, and data asset accessed is fully logged to enable traceability and rapid incident response. Key risks such as data leakage, model bias, reliance on outdated logic, or accidental code exposure are mitigated through regular reviews, input validation, adversarial testing, and a human-in-the-loop workflow for sensitive or high-impact requests. Ongoing feedback loops allow the agent to learn from outcomes and further strengthen its models and safeguards. This multi-layered approach ensures that analytics remain reliable, explainable, auditable, and firmly under organizational control, sustaining both security and trust as the system evolves.
+Co-owners
+Soumya Acharya
+Technical Architect
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+Asset 360: An AI-Driven, Asset-Centric Platform for Real-Time Banking Fraud Detection
+Asset 360 will be an advanced fraud detection platform designed specifically for banks and financial institutions. It delivers a real-time, holistic view of fraud risk by integrating and analyzing data across all assets—such as accounts, cards, devices, IP addresses, and geolocations.
+
+Modern financial crime is increasingly sophisticated, often involving collusion, identity theft, money mule networks, and shared assets across multiple accounts. Traditional fraud solutions, which typically focus on individual transactions or accounts, are not equipped to detect the hidden networks and evolving tactics of today’s fraudsters.
+
+Key Features and Approach:
+
+Unified Asset Data Mart: Aggregates all relevant customer, device, transaction, and network data into a single, relationship-oriented datastore.
+
+Graph Analytics & GNNs: Utilizes graph databases and  Graph Neural Networks (GNNs) to map and analyze the complex web of relationships among accounts, devices, and other assets.
+
+Advanced Machine Learning: Employs a combination of models—including XGBoost, Random Forests, Autoencoders, and GNNs—for rapid risk scoring, anomaly detection, and network risk analytics.
+
+Real-Time Processing: Continuously ingests and analyzes data streams using technologies like Kafka and Flink, providing instant fraud alerts and risk flags.
+
+Explainable Alerts: Produces rich, actionable, and transparent alerts, with every risk decision traceable and supported by understandable reasoning—crucial for compliance and investigations.
+
+Key Use Cases: Card fraud, synthetic identity detection, account takeover, money laundering schemes, and organized fraud rings.
+
+Business Impact:
+
+Improves fraud detection by exposing asset-sharing, collusion, and coordinated financial crime.
+
+Reduces false positives with richer context and graph-based reasoning.
+
+Enables faster, more informed fraud interventions and investigations.
+
+Scales for enterprise banking needs and adapts to emerging fraud threats.
+
+Conclusion:
+
+Asset 360 represents a transformative approach for banks to stay ahead of financial crime. By bringing together asset-centric data integration, real-time analytics, and powerful AI/graph modeling, it enables proactive, adaptive, and explainable fraud prevention that meets today’s regulatory and operational demands.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+Banks face growing fraud risks—including collusion, synthetic identities, and money mule networks—that exploit shared assets (accounts, devices, IPs, cards). Traditional rule-based systems miss complex patterns and produce high false positives. Solution: Asset 360 will be a unified fraud detection product for banks. It integrates account, device, transaction, and network data into an asset-centric data mart. The platform uses a graph database to map relationships among accounts, devices, cards, IPs, and geolocations. It runs machine learning models (XGBoost, Random Forests) and Graph Neural Networks to score fraud risk in real time. Features include: Real-time streaming data ingestion (e.g., Kafka, Flink). Graph construction for assets and their interactions. Feature engineering for both tabular and graph metrics. ML and GNN-based scoring for transactions, accounts, and assets. Immediate alerting with tags giving reasons and asset linkages. Integration with bank case management tools via REST APIs. Implementation Plan: Analyze risk requirements, data availability, and integration points. Ingest and normalize data from core banking, payments, device telemetry, and KYC. Build graph database and feature store. Develop and train ML, anomaly detection, and GNN models. Deploy models for real-time scoring and alert generation. Implement dashboards and visualization for operations. Pilot in select channels; refine based on feedback and performance metrics. Roll out fully and support ongoing updates for new fraud patterns and regulatory changes. Asset 360’s architecture automates fraud detection, reduces manual investigations, and supports compliance through explainable model output and audit logs.
+Novelty of the idea, benefits and risks.
+it is a fundamentally different approach to fraud detection by unifying asset-centric data modeling and graph-based AI, enabling banks to analyze how assets (accounts, cards, devices, IPs) interact rather than evaluating transactions or accounts in isolation. This innovation allows the detection of sophisticated, network-driven fraud schemes—such as collusion, synthetic identities, and money mule activities—that traditional systems miss. By leveraging real-time streaming, graph databases, machine learning, and explainable Graph Neural Networks, the solution delivers actionable, transparent insights for operations and compliance. Asset 360 can be integrated into various banking environments, scales horizontally to handle high transaction volumes, and evolves as new fraud patterns emerge. Its modular architecture and automated feedback loops ensure continuous improvement and regulatory alignment, making it a sustainable, high-value investment that strengthens a bank’s defenses while reducing false alerts, manual workloads, and long-term operational costs.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Asset 360 product will ensure secure and responsible AI use by integrating strong data encryption, strict access controls, and comprehensive audit logging at every stage of data processing and analysis. All machine learning and graph models are regularly audited for fairness, bias, and robustness, with explainable AI modules that clearly link risk decisions to specific asset relationships. The platform features privacy-by-design, ongoing feedback loops, adversarial robustness testing, and human oversight for critical cases, ensuring compliance with regulatory standards and transparent, accountable fraud detection for banks.
+Co-owners
+Samyadeep Kuila
+Engineer
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Samyadeep Kuila
+2 months ago
+AI-Powered Internal Job Search and Talent Marketplace Platform
+AI‑Powered Internal Job Search & Talent Marketplace that continuously maps employee skills, availability, and aspirations to open project needs. It proactively matches bench talent to internal gigs, roles, and mentorships, cutting idle time, boosting utilization, and improving retention. Predictive analytics forecast demand and recommend reskilling, turning bench time into deliverable value while giving employees transparent, personalized career mobility.
+
+
+The platform builds a real‑time, organization‑wide skills graph from HRIS/LMS data, resumes, certifications, and project histories. An AI matching engine ranks candidates for each role using multi‑objective optimization (skills fit, availability, aspirations, location/time‑zone, rate/band, diversity goals). Employees get a personalized internal “job board” for short gigs and full roles; managers get instant shortlists; workforce planners get demand forecasts and upskilling recommendations. Result: fewer bench days, faster staffing, lower external hiring, and higher employee engagement—with governance, explainability, and bias monitoring built in.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+The challenge & opportunity: • Under utilization & margin drag: Manual staffing leaves capable people idle; utilization swings with project demand. • Fragmented talent data: Skills live across HRIS, ATS, LMS, resumes, and wikis—no single, current view. • Slow time to staff: Managers wait on recruiters while internal talent is available now. • Leaky retention: Lack of internal mobility visibility drives attrition and external hiring costs. • Strategic planning gap: Limited ability to forecast demand and proactively reskill or redeploy. Proposed solution : 1. Real Time Skills Inventory: Auto extract and normalize skills, certifications, and project histories into a continuously updated skills graph. 2. AI Driven Matching: Rank candidates for each role/gig using embeddings + rules + optimization. 3. Employee Marketplace: Personalized feed of roles, short term gigs, and mentorships aligned to skills and aspirations. 4. Manager & PM Console: Instant internal shortlists, one click requests, “what if” staffing scenarios. 5. Workforce Forecasting: Predict role demand and skills gaps; auto recommend reskilling cohorts and learning paths. 6. Governance & Analytics: Explainable recommendations, fairness/bias dashboards, utilization and time to staff KPIs.
+Novelty of the idea, benefits and risks.
+What’s innovative: • Real time skills graph that fuses structured + unstructured signals (projects, code repos, tickets, certifications). • Intent aware matching: blends skills with aspirations and learning goals to avoid “utilization at any cost.” • Proactive supply–demand engine: predicts needs and recommends reskilling before gaps appear. • Explainable, controllable AI: tunable weights, “why this match” breakdowns, and fairness constraints. Benefits: • Reduced idle time: Bench talent routed to work fast. • Productivity & delivery: Better skill–role fit → fewer delays, higher quality. • Cost optimization: Internal mobility cuts recruiting fees and contractor spend. • Retention & growth: Clear internal paths, short gigs for stretch opportunities. • Strategic agility: Rapid redeployment when priorities change. Scalability & sustainable value: • Technical scale: Stateless microservices, vector search (ANN), streaming updates; scales to tens of thousands of profiles. • Org scale: Designed for multiple BUs, geos, and languages; policy packs per region. • Data network effects: Each match/feedback improves the skills graph and ranking over time. • Sustained ROI: Ongoing reduction in bench + smarter reskilling yields compounding value. Illustrative ROI (example—adjust to your org): • Headcount: 2,000, bench rate 12%, ~230 workdays/year → baseline bench days = 2,000 × 0.12 × 230 = 55,200. • Conservative improvement: 35% reduction in bench days → 19,320 days saved. • Fully loaded daily cost: $550 → $10.626M gross savings/year. • If platform cost = $0.6M, net savings ≈ $10.026M; ~17.7× ROI in year one.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Security & privacy by design: • Data minimization & purpose binding: Only ingest fields required for matching/forecasting; configurable retention. • Encryption: In transit (TLS 1.2+) and at rest (AES 256); secrets in a vault; KMS managed keys. • Access controls: SSO (SAML/OIDC), RBAC/ABAC with least privilege; manager sees only their span. • Segmentation & logging: VPC/private subnets; immutable audit logs; anomaly alerts for unusual access. • PII protection: Pseudonymize before embedding; redact sensitive text; optional on prem/vector DB. • Data residency & compliance: Region pinning; DPA readiness; GDPR/CCPA request workflows (access, rectify, erase). Responsible AI & governance: • Fairness: Track selection rate parity and disparate impact; enforce constraints in ranking to ensure equitable opportunity distribution. • Explainability & recourse: “Why this match” panels (top skills, evidence) + appeal/feedback flows for employees and managers. • Human in the loop: Managers approve final staffing; models assist, never auto decide high impact outcomes. • Bias controls: Exclude protected attributes and strong proxies from features; continuously test outcomes for drift/bias. • Model lifecycle: Versioned models, A/B tests, performance and drift monitors, rollback/kill switch. • Content safety: Prompt hardening; input/output filtering to avoid leaking sensitive data in free text fields.
+Co-owners
+Sourav Kumar Pradhan
+Senior Engineer
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+ShaktiSarathi AI: Agentic Platform for National Power Consumption Analytics and Optimization
+ShaktiSarathi AI is an agentic analytics platform designed for the intelligent monitoring, prediction, and optimization of India’s national power consumption. It ingests diverse data sources—grid operation statistics, smart meters, SCADA streams, weather, and regulatory logs—applies specialized AI models through autonomous agents, and delivers insights and commands via open APIs and user dashboards. Every step, from data collection to action, is modular, traceable, and scalable.
+
+ 
+
+Architecture Table
+Input Data Source	Model Type	Responsible Agent	Task / Workflow	API / Interface
+NPP/OGD (Generation, Demand, Outage)	Tabular/Time-Series	Consumption Analysis Agent	Predict load curve, demand peaks	REST API (NPP, OGD); batch/stream upload
+SCADA (Real-time sensor, substation)	Tabular/Time-Series	Grid Monitoring Agent	Detect faults, grid congestion	SCADA API; secure MQTT/AMQP stream
+Smart Meter Data	Tabular, Time-Series	Consumer Behavior Agent	Forecast usage, detect anomalies	Smart Meter Management API
+Weather / Climactic Data	Tabular, Environmental	Scenario Simulation Agent	Simulate impact on usage/generation	Weather Data API (e.g., IMD, OpenWeather)
+Outage/Maintenance Logs	NLP/Text Model	Log Analysis Agent	Extract event, maintenance trends	Log/Event ingestion API, PDF/CSV batch upload
+Regulatory / Gov Docs	NLP/Text Model	Policy Compliance Agent	Flag compliance, policy risk	OGD or Gov Portal API, document parser
+Grid & Transmission GIS	Tabular/Image, Fusion	Geospatial Agent	Visualize assets, analyze spatial risk	GIS API (WMS, REST), file/image upload
+Consumer Feedback	NLP/Text Model	Sentiment Agent	Analyze feedback, service quality	Mobile app API, feedback form ingestion
+Combined Data Streams	Fusion Model	Orchestration Agent	Holistic state prediction, optimization	Orchestration API, service bus, output dashboard
+ 
+
+Instructions for Use
+Each agent specializes in a workflow, triggered either on a schedule, by event (fault, peak), or on-demand via an open API.
+
+All models (tabular, time-series, NLP, fusion) can be deployed as microservices or cloud functions, orchestrated by the main platform.
+
+API Endpoints enable integration with external grid management software (utility SCADA, energy apps), web dashboards, and mobile notifications.
+
+Example Workflow
+Grid Monitoring Agent continuously ingests data from SCADA API; time-series model predicts a risk of congestion at substation X.
+
+Consumption Analysis Agent pulls the latest city-level demand data from NPP via REST API; forecast shows demand spike tomorrow.
+
+Scenario Simulation Agent fetches weather predictions; models impact on solar/wind generation.
+
+Log Analysis Agent parses maintenance logs uploaded via API, flags repeated outages on a transformer.
+
+Orchestration Agent runs fusion model, compiles all insights, recommends optimal load balancing actions, triggers notifications via dashboard and webhook API
+
+In power grid operations, restoration refers to the process of returning the electrical system—or part of it—back to normal functioning after a disturbance such as an outage, fault, or abnormal event.
+
+Restoration in a Power Grid Context
+When is restoration needed?
+
+After a partial or complete blackout (loss of power supply)
+
+Following faults in transmission lines, substations, or equipment (e.g., tripped breakers, short circuits, voltage sags)
+
+Post-maintenance or emergency shutdowns
+
+Key Restoration Steps (Often Automated by SCADA Agents):
+Fault Isolation:
+
+Agents identify and isolate the faulty section to prevent damage and minimize impact (e.g., opening breakers, rerouting power).
+
+Reconfiguration:
+
+The system redirects electricity flow around the fault, using backup lines or alternate substations to restore service to as many areas as possible.
+
+Gradual Re-Energization:
+
+Power is restored step by step to affected sections, preventing overloads or further faults.
+
+Monitoring & Verification:
+
+The agent or operator monitors voltages, currents, and system stability while restoring to ensure safe operation.
+
+Full Restoration:
+
+Once stability is validated, normal configuration and power delivery to all affected customers is resumed.
+
+Logging & Reporting:
+
+Every action is recorded for compliance, engineering analysis, and regulatory review.
+
+SCADA Agent Role in Restoration
+Detects the fault automatically.
+
+Rapidly isolates it (opens breakers, switches lines).
+
+Suggests/executes restoration steps—either automatically or with operator approval.
+
+Ensures safe reconnection and records all events.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+India’s power grid faces chronic challenges: unpredictable demand surges, regional supply-demand mismatches, delayed fault detection, inefficient manual interventions, and increasing complexity due to renewables and distributed energy resources. Traditional approaches struggle to provide real-time, actionable intelligence for grid operators, utilities, policy makers, and large commercial consumers—leading to blackouts, losses, and operational inefficiencies. ShaktiSarathi AI enables automated monitoring, forecasting, and optimization of national power consumption by harnessing real-time data from SCADA, smart meters, weather feeds, and governmental platforms. Autonomous agents analyze these inputs, detect anomalies, predict peak loads, and recommend dynamic adjustments—such as grid reconfiguration, load balancing, and preventive asset maintenance. The solution's modular, API-driven architecture allows rapid scale-up across TCS business verticals, utility partners, smart city projects, state electricity boards, and industry customers. It integrates seamlessly with existing grid management software and IoT deployments, supports cloud or on-premise rollout, and adapts easily to evolving regulatory, market, or technical needs. ShaktiSarathi AI can be piloted for a city, expanded to a state, and scaled nationally—maximizing value for TCS and a diverse set of enterprise clients
+Novelty of the idea, benefits and risks.
+Novelty: ShaktiSarathi AI is one of the first platforms in India to fuse real-time grid data (SCADA, smart meters, weather, government reports) with agentic AI—enabling autonomous prediction, anomaly detection, and optimization of power consumption. The system leverages multimodal models—tabular, time-series, NLP, and fusion—within self-orchestrating agents that automate monitoring, forecasting, and actionable recommendations across the grid. This approach moves beyond traditional static dashboards and manual analysis; it provides dynamic, adaptive intelligence for all stakeholders in the power sector. Benefits: Delivers early warning for peak demand, system anomalies, and asset risks—allowing rapid intervention and improved grid reliability. Automates load balancing, preventive maintenance, and demand response—reducing blackouts, losses, and operational costs. Informs regulatory agencies, utilities, and consumers with transparent, evidence-driven insights—supporting policy and sustainable energy use. Scales quickly for TCS, state utilities, cities, and industries—enhancing efficiency and resilience at local and national levels. Risks: Data latency or completeness issues may limit short-term prediction accuracy; mitigated by data redundancy, validation, and agent error-handling. Privacy and security concerns for consumer/utility usage data are managed by robust encryption, anonymization, and access control. Evolving grid technologies and regulatory changes require adaptive agents and continuous system update.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+ShaktiSarathi AI is designed with Responsible AI principles at its core, ensuring ethical, secure, and compliant operation across all power grid analytics and automation tasks: Security: All system data, including SCADA streams, smart meter inputs, and user feedback, are encrypted in transit and at rest. Role-based access controls restrict who can view, modify, or act on sensitive information. Full event logging provides traceability for all agent actions, audits, and system interventions. Fairness: Agentic analytics actively monitor and counter potential bias—ensuring consistent coverage and quality for urban, rural, commercial, and public sector customers. Models are routinely audited for fairness, and feedback from all states, regions, and user categories is incorporated into system updates. Privacy: No personally identifiable information from consumers or field operators is exposed in predictions or actions. All customer- or device-level usage data is anonymized before processing, with opt-in/consent mechanisms respected for granular feedback services. Legal Compliance: The platform enforces and automates statutory requirements from central and state energy regulators (CEA, CERC, or SERCs). All recommendations, reports, and control actions are logged for review, with adaptive compliance modules to track regulatory changes and support inspections or audits.
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+JalMitraAI: Smart Water Access for Villages & Governance
+Water insecurity impacts hundreds of millions in rural India, with chronic access, equity, quality, and efficiency challenges. Governments are pressured to deliver reliable water to every home, but infrastructure, leakages, climate variability, and maintenance bottlenecks undermine goals like Jal Jeevan Mission. Manual tracking is inadequate, leaving gaps for marginal communities. An integrated AI-driven platform is needed for proactive water resource planning, predictive supply, live management, and fair policy enforcement.
+
+Input Data
+IoT Sensors: Tank/borewell levels, pressure/flow, water quality, local smart meter images.
+
+**Satellite/Drone: ** Source mapping, pipeline tracing, water body coverage.
+
+Weather Sensors/Feeds: Monsoon, drought, rainfall, evaporation data.
+
+Government Records: GIS/utility maps, maintenance logs, subsidy records, population demand.
+
+Community Mobile Input: Demand surveys, tap complaints, crowd-sourced problems.
+
+Synthetic Data: Simulated drought/flood, population growth for model robustness.
+
+Assumption: State/NGO partners provide sensor feeds, mapped infrastructure, and baseline service logs.
+
+Current Challenges
+Leakages/outages: Unnoticed due to absent realtime monitoring.
+
+Inequity: Marginal/remote villages left out or last-served; caste/gender infrastructure gaps.
+
+Reactive governance: Delayed responses to repair or supply problems, little crisis foresight.
+
+Data fragmentation: Siloed water logs, paper maps, poor cross-department integration.
+
+Technical skill: Governments and villagers lack training or digital literacy for new tech.
+
+Proposed AI Solution (Fusion Stack)
+Chosen AI Layers
+Edge AI: On-site sensor gateways for instant leak/fault alerts, local pump health, water tank/facility monitoring, enabling low-latency supply protection.
+
+Predictive AI: LSTM/Transformer models forecast demand by region, predict drought/flood, optimize distribution and maintenance using weather, sensor, and outage data.
+
+Agent AI: Crew dispatch automation, tanker/supply reroutes, crisis alerting, prioritized repairs and subsidy triggers.
+
+Bot AI Interface: Multilingual chatbot/app for villagers, governance staff, engineers for Q&A, reporting (“Will my tap run today?”, “Alert tankers for tomorrow”, “Show leaks/delays now”).
+
+Fusion Approach: Edge enables swift action and local resilience, predictive powers planning and policy, agent automates supply and repairs, bot democratizes digital engagement.
+
+Workflow 
+[IoT Sensors] -> [Edge AI] -> [Cloud/Prediction] | | | [Local Alert] [Live Sync] [Predictive Model] | | [Agent: Crew/Reroute/Subsidy] | | | [Bot: Villager/Gov Dashboard]<--|
+Technical Description
+Data Flow: Sensor/meter data processed by edge AI for instant alerts, synced to cloud for regional analysis. Predictive AI integrates weather and pattern analytics for supply/demand forecasting. Agent AI automates routing, repairs, and subsidy priorities. Bot supports multilingual, simple mobile interface for rural and governance stakeholders.
+
+Models: CNN for edge leaks/faults; LSTM/NN for usage and crisis forecasting; RL for routing/maintenance; NLP for bot interaction.
+
+Integration: APIs for Jal Jeevan Mission, municipal water dashboards, Gram Panchayat apps, and NGO interfaces.
+
+Impact
+Cuts water downtime in poorest villages, ensures rapid leak detection, fair crisis response, and targeted supply—reaching millions, democratizing governance, and improving health, gender equity, and rural productivity.
+
+Stakeholders: Poor villagers, Panchayats, NGOs, district/state water departments.
+
+Use Case Story
+In a Rajasthan cluster, JalMitraAI sensors catch tank drops and pipe leaks before outages. Predictive models warn a shortage, triggering agent-powered tanker reroutes and subsidies for marginalized hamlets. Villagers query the bot for daily supply status and report leaks for priority repair. Downtime drops, government audit KPIs soar, and health/schooling rates improve.
+
+Limitations
+Sensor cost/gaps in remote villages; GSM/internet unreliability; skill deficits for new tech; legacy record conversion; data privacy oversight.
+
+Deployment/Scaling Challenges
+Funding sensor networks; staff/villager language training; cross-platform API/governance protocols; sustainable repair/maintenance planning; pilot adaption for local contexts.
+
+3. Challenge/Business Opportunity & Scalability
+Water poverty and governance inefficiency cost India ₹100,000 crore/year in lost opportunity, health, and productivity. JalMitraAI delivers up to 40% downtime reduction, 5x quicker repairs, targeted subsidy, and transparent citizen service. Modular sensors, cloud APIs, and dashboards allow village-to-district scaling for Jal Jeevan Mission, with international utility and NGO extension. Plug-and-play interoperability and local language bot accelerate scale, with quantifiable cost and time savings.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+Water poverty and governance inefficiency cost India ₹100,000 crore/year in lost opportunity, health, and productivity. JalMitraAI delivers up to 40% downtime reduction, 5x quicker repairs, targeted subsidy, and transparent citizen service. Modular sensors, cloud APIs, and dashboards allow village-to-district scaling for Jal Jeevan Mission, with international utility and NGO extension. Plug-and-play interoperability and local language bot accelerate scale, with quantifiable cost and time savings
+Novelty of the idea, benefits and risks.
+Moves beyond manual logs and hotline troubleshooting: JalMitraAI fuses real-time edge sensing, predictive demand/supply, automated agent actions, and multilingual citizen/governance bots. Benefits include rapid detection, transparent allocation, community engagement, and policy innovation. Risks: hardware failure, privacy breaches, misallocated resources. Mitigation: fallback alerts, encryption, phased rollout, human-in-loop review, and inclusive language UX.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Security: AES-encrypted sensor-cloud pipeline; verified dashboard/bot access for users. Fairness: Service audits for caste/gender/region bias; inclusive AI recommendations and bot interfacing. Privacy: All household/location data anonymized; opt-in complaint and incident reporting. Legal: Compliant with Jal Jeevan, state utility laws, data protection; audit logs on all automated actions and subsidies. Transparency: Public dashboard, explainable logs, open complaint/advice channels in local languages.
+Co-owners
+Prasun Koyal
+Developer
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+KrishiMitra: AI Vatika Profit Platform
+India’s agri sector faces chronic inefficiency: climate unpredictability, poor crop-soil fit, supply gluts/shortages, opaque market signals, and lack of integrated management for farmer, business, consumer, and government layers. Government agencies struggle to monitor, balance, and promote profitable, sustainable scaling that benefits all, while crops, soil, and climate interact unpredictably. A holistic AI platform can empower timely, data-driven decisions and policy for win-win outcomes across stakeholders.
+
+Input Data
+Soil Sensors (IoT): pH, organic matter, moisture, nutrient profiles.
+
+Weather and Climate: Local sensors, historical weather station logs, IMD + satellite imagery, seasonal forecasts.
+
+Market Consumption: Retail POS, mandi trade volumes, price signals, business buyer contracts, consumer purchase histories.
+
+Farm Operations: Crop cycles, yield records, seed/fertilizer/pesticide input logs, cost of production.
+
+Government Open Records: Land holding maps, subsidy/policy distribution, water usage, crop insurance claims.
+
+Synthetic Data: Simulated pest outbreaks, climate anomalies for model robustness.
+
+Assumption: Agri universities and government extension centers supply starter datasets for soils, climate, crops, and demand.
+
+Current Challenges
+Fragmented Decisions: Soil and weather not matched to crop recommendations or market trends.
+
+Climate Risk: Policy and farmer action lack fine-grained forecast.
+
+Demand Gap: Gluts/shortages harm both producer and consumer value.
+
+Monitoring Obstacles: Government cannot track farm-level sustainability or contract traceability easily.
+
+Low Technology Penetration: Rural edge, smallholder, staff data literacy often low.
+
+Proposed AI Solution (Fusion Stack)
+Chosen AI Layers & Justification
+Edge AI: Local sensor anomaly detection (soil, crop health, water loss) with real-time alerts for farmers and government field staff—adapts to rural infrastructure.
+
+Predictive AI: Regional forecasting (yield, price, risk zones) using LSTM/Transformer models across soil/weather/crop/market parameters to support proactive farmer actions, policy tweaks, crop insurance, and business contracts.
+
+Agent AI: Automated dispatch and recommendations for crop switching, subsidy distribution, bulk contract suggestions, and risk alerts.
+
+Bot AI Interface: Multilingual government app/chatbot for queries such as “Show districts at monsoon crop risk,” “Suggest crop for Nashik soil and demand,” or “Trace farm-to-consumer for dal supply chain.”
+
+Fusion AI Approach: Edge for local decisions/safety, Predictive for scalable planning, Agent for auto-action, Bot for government staff/citizen access.
+
+Workflow (ASCII Diagram)
+ 
+[Soil/Weather Sensors]--->[Edge AI]--->[Cloud Database] | | [Local Event] [Sync/Upload] | | [Predictive AI: Yield/Price/Climate] | | [Agent: Policy/Contract/Subsidy] | | [Bot: Govt/Farmer/Business] | | [Dashboard: Maps, Reports, Actions]
+Technical Description
+Data Architecture: Field sensors and operator app push to local edge AI; flagged events, summary stats synced to cloud; central database aggregates for regional/state/national dashboards.
+
+Model Stack: Edge: Random Forest/CNN for anomaly; Predictive: LSTM/Transformer for multi-variate modeling (soil, rain, price, yield); Agent: RL for optimum contracts/policy distribution.
+
+Integration: Secure RESTful APIs to public databases, ERP/mandi management tools, policy dashboards; bot via mobile/web for staff/farmers.
+
+Bot Features: Multilingual chat, role-driven info panels, gov-specific reporting tools.
+
+Impact
+Farmer Profit: Precision crop choice, water and input savings, insurance against climate/price shocks.
+
+Business Reliability: Traceable sourcing, guaranteed supply, smarter contracts.
+
+Consumer Benefit: Lower prices, traceability, better food quality.
+
+Government Value: Real-time, map-based monitoring, policy effectiveness, subsidy targeting, food security management.
+
+Use Case Story
+A Maharashtra field officer uses KrishiMitra bot to identify villages with upcoming water stress and excess rice production; Predictive AI recommends crop switch and alternate business contracts, Agent AI drafts subsidy and supply chain suggestions, and farmers receive suggestions via WhatsApp in Marathi.
+
+Limitations
+Sensor/Data Gaps: Small farms may lack baseline hardware/data; government records may lag updates.
+
+Bandwidth/Compute: Edge deployment may face rural network issues.
+
+Adoption: Government staff and farmer digital literacy barriers.
+
+Deployment/Scaling Challenges
+Cost: Sensor kits, cloud compute, multilingual bot rollout, staff training.
+
+Infra: Legacy ERP/data silos, API integration, geographic customization.
+
+Governance: Alignment across government ministries, equitable algorithmic decisions.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+India’s agri sector is worth ₹30 lakh crore but suffers ₹60,000 crore losses from waste, climate, and market mismatch each year. KrishiMitra enables real-time data-driven government action, benefiting millions of farmers and consumers. Modular sensor kits, multilingual bots, and API-based dashboards support rollout from village to national level, integrating seamlessly with government ERP and mandi systems for exponential scaling
+Novelty of the idea, benefits and risks.
+Novelty: First to fuse real-time edge anomaly, predictive multi-layer modeling, agent-driven contract/policy drafting, and accessible bot for government/farmer/business—all in one system. Benefits: Data-backed diversification, climate resilience, smarter policies, high transparency, and empowered markets. Risks: Data bias, edge sensor failure, over-reliance on automation, policy mis-targeting due to faulty models. Mitigations: Frequent dataset audits, fallback manual alerts, open model explainability, phased policy pilots.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Security: AES encryption for all sensor/app/cloud data; endpoint authentication for users. Fairness: Model recommendations audited by region, crop, and socio-economic profile; inclusive bot design for language, literacy. Privacy: Farm, business, and consumer data anonymized; opt-in traceability only. Legal: Alignment to Indian agri data, privacy, and digital contract laws; open data standards for cross-ministry integration. Transparency: Explainable AI; all agent actions and bot recommendations logged and visualized for oversight.
+Co-owners
+Prasun Koyal
+Developer
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+SmartBasket: AI Grocery Retail Booster
+The Indian online grocery segment is booming, but faces frequent stockouts, delivery delays, changing local demand, and low user engagement for daily needs. Tata BigBasket, as a market leader, must address these pains to retain and grow customers, optimize inventory, and minimize operational costs. AI integration is vital for predictive scaling, agile logistics, and personalized service, supporting millions of households and small businesses.
+
+Input Data
+User Purchase Data: Browsing, order history, abandoned carts, subscription status, seasonal and local demand patterns.
+
+Inventory/Supply Chain: Real-time stock levels at warehouses, store shelves, supplier shipment logs, product expiry data.
+
+Logistics: Fleet movement (GPS), delivery ETA, route efficiency, weather/local traffic conditions.
+
+Market Signals: Competitor prices, local market events, festive seasons, economic trends.
+
+Feedback Channels: Ratings, product reviews, customer queries, service logs.
+
+Assumption: Tata BigBasket’s ERP provides baseline datasets; additional synthetic scenarios simulate festival surges or supply disruptions for robustness testing.
+
+Current Challenges
+Stockouts/Spoilage: Demand prediction and real-time inventory balancing are poor, causing frequent unavailability or wastage.
+
+Last-mile Issues: Traffic, weather, and local events frequently delay deliveries or increase costs.
+
+Low Engagement: Customers’ daily needs fluctuate but targeting is static; recommendations don’t adapt to individual or community patterns.
+
+Operational Fragmentation: Store-warehouse-customer data is siloed; staff lack actionable prioritization tools.
+
+Manual Interventions: Staff must micromanage substitutions, route tweaks, and demand surges.
+
+Proposed AI Solution (Fusion Stack)
+Chosen AI Layers & Justification
+Edge AI: Warehouse and store sensors process stock updates, anomaly detection (e.g., perishable spoilage, theft) locally for speed.
+
+Predictive AI: LSTM/Transformer models forecast demand for products by region, daypart, and customer cluster; optimize stocking, auto-replenishment, and festive/event push notifications.
+
+Agent AI: Instantly reroutes delivery fleets, triggers supplier orders, automates digital shelf management, and makes substitution/smart recommendations (e.g., suggest alternate brands if stockout).
+
+Bot AI Interface: Conversational shopping assistant helps customers (“Show me deals on staples”, “Add my usual breakfast order”), resolves support queries, and provides staff dashboards for inventory and fleet control.
+
+Fusion AI Approach: Edge ensures operational agility and safety, Predictive supports business scaling, Agent automates frontline actions, Bot delivers user/staff engagement.
+
+Workflow
+[User, Warehouse, Store] --> [Edge Sensor/Update] | | [Order/Event] [Local AI: Stock Anomaly] | | [Cloud API]------[Predictive AI (Demand/Delivery)] | | [Agent AI (Auto-Order, Fleet)] [Bot (User/Staff Interface)] | | [Dashboard, Q&A, Recommendations]
+Technical Description
+Data Flow: IoT/store sensors feed local edge AI for instant safety/event flagging, streaming to cloud for bulk analytics.
+
+Model Stack: Edge anomaly (Random Forest/CNN); predictive (LSTM/Transformer, clustering); agent (RL for logistics); bot (NLP with chatbot APIs).
+
+Integration: RESTful API gateway to ERP, existing BigBasket app/cloud, logistics and supplier modules.
+
+Bot Interface: Available via app, WhatsApp, and web dashboard for both customers and staff.
+
+Impact
+Minimizes stockouts and delivery delays, cuts losses, and improves shopper satisfaction.
+
+Personalizes daily needs recommendations, increases repeat purchases and upsell opportunities.
+
+Automates operational decisions, freeing staff for strategic roles and rapid scaling.
+
+Connects store, warehouse, and consumer data into actionable daily cycles.
+
+Use Case Story
+During a festive week, Predictive AI forecasts a 35% surge in dairy demand in Mumbai. Edge AI alerts a local store of spoiled curd batch. Agent AI reroutes delivery vans to maximize timely orders, auto-orders from suppliers, and recommends alternate products to customers with stockouts—all surfaced via a customer-friendly bot in the app.
+
+Limitations
+Legacy Data: Some stores may lack real-time IoT integration.
+
+Bandwidth/Compute: Rural locations may see latency spikes.
+
+Adoption: Staff training, customer trust in bot suggestions.
+
+Deployment/Scaling Challenges
+Hardware/Cloud Costs: Sensors, AI cloud, communications.
+
+Integration: ERP interoperability, supplier API readiness.
+
+Governance: Data standards across stores/franchises.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+Market Need: India’s online grocery market needs frictionless, hyperlocal scaling, reliable fulfillment, and daily replenishment for millions. SmartBasket provides measurable value: fewer stockouts, 20%+ faster delivery, 10%+ improved inventory turnover, rising NPS scores. Scaling: Modular APIs, mobile and web bot widgets, sensor kits for stores, and plug-and-play cloud integration allow gradual rollout across cities and SKU categories.
+Novelty of the idea, benefits and risks.
+Novelty: Instead of manual dashboards or batch analytics, SmartBasket fuses real-time edge eventing, predictive forecasting, hyperlocal automation, and conversational engagement for daily needs. Benefits: Time and waste savings, responsive restocking, engaged shoppers, scalable expansion in metros and Tier 2/3 cities. Risks: Data breaches, AI recommendation errors, supplier delays. Mitigations: Encryption/authentication on data streams, human-in-loop overrides on bot recommendations, multi-supplier fallback logic.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+Security: AES-encrypted IoT and cloud transfers, OTP staff dashboard access, API RBAC for suppliers. Fairness: SKU recommendations are audited for regional, cultural, and price diversity (no bias to major brands). Privacy: Each user’s shopping and feedback data is anonymized, with opt-out control in app. Legal: Follows India’s e-commerce and data protection laws, clear consent for AI-powered personalization. Transparency: Bot explanations given for recommendations, trackable agent actions in staff dashboards.
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
+
+
+
+Ultimatix logo|EVENTS|GATEWAY
+
+
+Home My events Explore Manage Reports 
+Events > Ideathon details
+poster
+tcs AI Hackathon 2025
+Idea Submission Closed On: 26 Sep 2025, 11:59 PM | Build Submission Closed On: 26 Sep 2025, 11:59 PM
+Discover more about tcsAI, please visit the Home page
+IDEATION PHASE  
+BUILD PHASE  
+IDEAS  
+BUILD SOLUTIONS  
+ATTACHMENTS  
+MORE  
+Back to ideas listing
+Sourav Kumar Pradhan
+2 months ago
+LokSwasthya AI - Agentic Platform for Livestock, Food Safety, and Human Health in India
+In India, the safety and nutritional quality of food—across livestock, dairy, grains, staples, vegetables, and fruits—directly influence public health and economic stability. Yet, current monitoring and risk management are fragmented. Government agencies like ICAR and FSSAI maintain excellent reference databases and periodically release advisories and recalls. However, these systems often lack seamless integration with market-level data, batch sales records, field sensor and lab readings, real-time consumer complaints, and fast, actionable links to state health authorities. LokSwasthya AI addresses these gaps with agentic intelligence—a network of cloud-hosted autonomous microservices (“agents”) that actively ingest, harmonize, and analyze real-time data from all major food safety stakeholders:
+Government Databases: Instant ingest from ICAR, FSSAI, and state portals, including standards, thresholds, recall lists, banned substances, outbreak reports, and region-wise nutrition recommendations.
+
+Market & Vendor Records: Ongoing batch uploads, API connectivity, and event-driven data capture from market sales, vendor inventories, product codes, and cooperative platforms.
+
+Lab & Sensor Streams: Direct integration with portable labs and IoT sensors generates readings for critical minerals (Ca, Fe, Mg, Zn, K, Na, Cu, Se, P, I, Mn), toxins (aflatoxins, pesticides, heavy metals), pathogens (Brucella, FMDV, BlueTongue, Avian Influenza), freshness, and spoilage markers.
+
+Survey & App-based Feedback: Automated collection and linkage of consumer/vendor health complaints and symptoms via mobile forms, voice logs, and rapid survey modules.
+
+Environmental Feeds: Continuous monitoring of weather, flood, pollution, and environmental risk, tied to region and season.
+
+Image Data: Mobile photo uploads from vendors, farmers, labs, and field staff capture batch images, labeling, packaging, and visible signals of contamination, pest, spoilage, and animal disease.
+
+Multimodal AI & Model Suite
+The Multimodal ML Hub is a major technical innovation in LokSwasthya AI, where agents orchestrate specialized models for each prediction type:
+
+Tabular Models: XGBoost, LightGBM, and custom regression/classifiers for structured batch and lab data—detecting mineral deficiencies, toxins, adulteration, and disease probabilities.
+
+Sensor Models: LSTM, GRU, regression and time-series architectures interpret IoT sensor/freshness/spoilage data, environmental factors, and dynamic risk signals.
+
+NLP/Text Models: Lightweight Transformers (DistilBERT, MobileBERT) interpret surveys, complaints, health advisories, vendor feedback, and regulatory updates—enabling sentiment analysis, early event detection, and symptom linking.
+
+Image Models (Detectron2): Using Meta AI’s Detectron2, agents perform advanced image detection, segmentation, and labeling. Detectron2 identifies contamination, spoilage, pest/rodent activity, visible disease, and packaging errors from batch photo submissions. Image outputs are fused with tabular and sensor analysis for holistic prediction. Models run on cloud GPU, and ONNX/TensorRT exports support edge inference for mobile deployments where feasible.
+
+Fusion Models: Agent-fused networks combine tabular, sensor, image, and text features for batch-level and consumer-level risk prediction—ensuring maximum context and accuracy. RAG (retrieval-augmented generation) modules fetch continuous government advisories, recalls, and outbreak news, automating contextual updates.
+
+Agent Orchestration & Technical Pipeline
+At its core, LokSwasthya AI leverages the Agent Orchestrator—a component that listens and responds intelligently to new market batches, lab findings, government alerts, or citizen feedback:
+
+Workflow Management: Agents are assigned to food groups (e.g., livestock, dairy, grains), regions, vendor groups, or outbreak risks. Upon receiving new data or triggers, agents plan appropriate analytics, select predictive models, fetch relevant government recalls, and notify stakeholders.
+
+Data Harmonization & Policy Integration: Diverse data types are automatically normalized and mapped against current thresholds, recall lists, and outbreak advisories.
+
+Scheduling & Monitoring: Agents schedule health checks, batch analyses, region-wide rapid responses, and ongoing market surveillance based on state health department triggers, recall notices, or vendor request cycles.
+
+Prediction, Alerts & Stakeholder Engagement
+LokSwasthya AI goes beyond dashboards, driving real-world alerts and interventions:
+
+Vendors and Farmers: Mobile app notifications and dashboards deliver rapid advisories (“Milk batch flagged for Brucella, recall required”; “Wheat sample exceeds aflatoxin threshold—remove from market”.State/Regional Health Departments: Direct notification pipeline ensures real-time batch/event alerts, outbreak detection, and containment actions—transforming public health response from reactive to proactive.Consumers: Risk ratings and health feedback close the loop between consumption, quality, and health outcomes. Automated advisories empower citizens with safe purchasing decisions .Regulatory Authorities: Automated audit logs and compliance reports document recalls, withdrawals, advisories, and citizen-facing actions—ensuring policy-driven, explainable interventions.
+
+Expected Outcomes & Societal Impact
+LokSwasthya AI delivers measurable, transformative benefits:
+
+Rapid Notification: Reduces time from contamination detection to advisories for vendors, regulators, and citizens.
+
+Outbreak Detection & Containment: Automates evidence flows to state health departments, enabling swift response and minimized spread.
+
+Lower Foodborne Illness & Malnutrition: Continuous monitoring and analytic intervention decrease incidence rates and support population health.
+
+Trustworthy Food Ecosystem: Transparent, data-driven advisories rebuild stakeholder trust and support economic resilience for farmers, vendors, and markets.
+
+Scalable AI Infrastructure: Enables TCS and customers to deploy robust, high-impact health analytics locally, regionally, or nationwide.
+
+Challenge/Business opportunity being addressed and the ability to scale it across TCS and multiple customers.
+India’s food supply chain faces persistent challenges: fragmented monitoring across markets and geographies, slow and reactive detection of contamination/adulteration, delayed outbreak and recall responses, and minimal linkage between consumer health feedback, vendor actions, and government interventions. These bottlenecks result in preventable public health risks, economic loss for producers and markets, and eroded trust in food safety. LokSwasthya AI addresses these gaps by automating the ingestion, integration, and analysis of diverse data sources—including government databases (ICAR, FSSAI, state or national health alerts), lab and sensor findings, vendor/market records, and real-time citizen feedback. Through agentic AI and multimodal analytics (tabular, image/Detectron2, sensor, NLP), the platform generates actionable health risk scores, batch-level contamination predictions, and rapid advisories for intervention—enabling swift responses to emerging threats. Scalability Across TCS and Customers: LokSwasthya AI’s modular, microservice architecture means rapid deployment in local co-operatives, markets, agribusiness sites, or state agencies. APIs and connectors support integration with TCS verticals (AgriTech, Healthcare, Retail, Analytics) and can extend to large enterprise clients, regulatory bodies, and rural digitization initiatives. The system grows by adding agents for new regions, food categories, and analytics, with ability to tailor dashboards, notification systems, and compliance reporting to any client ecosystem. Supports on-prem, cloud, or hybrid deployments; scalable from pilot projects to pan-India public health infrastructure, maximizing impact for TCS and diverse customer needs.
+Novelty of the idea, benefits and risks.
+LokSwasthya AI is among the first platforms in India to combine agentic AI automation with multimodal analytics—including tabular, sensor, NLP, and advanced image-based detection using Meta’s Detectron2—for real-time food safety and public health risk prediction. Autonomous agents orchestrate synchronous ingestion and harmonization of data from government databases, market and lab records, citizen feedback, and environmental APIs. The platform dynamically incorporates latest state advisories and recall events, triggering rapid, evidence-based alerts and interventions. Seamless integration with state health departments allows for closed-loop outbreak prevention, recall management, and citizen protection from the batch to the population level. Benefits: Enables early, automated detection and response to food contamination, disease, and nutrition risks. Empowers farmers, vendors, and consumers with clear, actionable advisories for quick intervention. Improves transparency and trust across food supply chains and markets. Reduces manual effort, improves coverage in rural and urban settings, and helps government respond rapidly to emerging public health threats. Continually learns and adapts to new challenges or foods, future-proofing safety and compliance. Risks: Incomplete, delayed, or inaccurate data ingestion may temporarily reduce prediction accuracy; mitigated by robust validating, fallback logic, and human-in-the-loop review. Potential bias in models or data representation handled by regular fairness audits and community-driven data expansion. Privacy and security challenges are managed by strict encryption, anonymization, and compliance with Indian data privacy laws. Integration failures with external APIs or government infrastructure are addressed by backup sync processes and modular design.
+Highlight adherence to Responsible AI principles such as Security, Fairness, Privacy & Legal compliance.
+LokSwasthya AI has been architected with Responsible AI at its core to ensure trust, safety, and accountability across all platform operations: Security: All data flows—government, market, lab, sensor, and user feedback—are encrypted at rest and in transit. Role-based access controls prevent unauthorized data retrieval and agent actions. Automated audit logs track every prediction, alert, and intervention, supporting end-to-end traceability and incident investigation. Fairness: Routine fairness and bias audits are performed on all deployed models to ensure predictions and advisories serve all regions, food groups, and communities equitably. Data collection strategies actively include underrepresented areas and groups; community feedback is incorporated to reduce systemic bias. Privacy: No personal identification data is stored or exposed; consumer and vendor feedback is anonymized before analytics. Full opt-in consent is required for all data sources, including citizen reporting and mobile app usage. Privacy controls and data minimization are implemented per Indian digital health laws and upcoming global standards. Legal Compliance: Platform enforces compliance with FSSAI, ICAR, and state food/health regulations for every recall, advisory, and report. Automated policy checks are performed for every batch or product analyzed. All notifications and interventions are logged for regulatory review; platform remains adaptable to future changes in national compliance laws and standards.
+Co-owners
+Alekhya Das
+Functional Analyst
+Get in touch with Prime tribe?
+We’d absolutely love to hear about the experience you are having on the platform. Knowing what delights you and what doesn’t, lets us craft a better time for you on the platform so that you get the most out of it. Tap on the blue button to spill out your thoughts then.
+
+Badges you can earn
+Take a look at the badges and achievements that are waiting to get unlocked next. Lets take them all down.
+
+
+Complaint Transparency Starter
+Record complaints received from stakeholders
+  
+Popular Hubs
+No popular hubs available.
+Help center
+TCS logo
+Ultimatix Release ver. 3.32.0:269-1e135b8|Copyright © 2025 Tata Consultancy Services
+Third Party Notices| Privacy Policy| Terms of Use| Browser and Display Compatibility
